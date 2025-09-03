@@ -9,14 +9,12 @@ import org.jsoup.select.Elements;
 import tech.codingclub.helix.global.HTTPUrlConnectionExample;
 
 public class WikipediaDownloader{
-
     private String keyword;
 
     public WikipediaDownloader(){
 
     }
     public WikipediaDownloader(String keyword){
-
         this.keyword = keyword;
     }
     public WikiResult getResult() {
@@ -61,16 +59,10 @@ public class WikipediaDownloader{
             catch(Exception e){
 
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
         WikiResult wikiResult=new WikiResult(this.keyword,response,imageUrl);
         return wikiResult;
-
     }
-
-
-
-
 }

@@ -14,3 +14,11 @@ This project provides a simple Java API to fetch and parse Wikipedia articles us
 - `WikipediaDownloader.java` — Main logic for fetching Wikipedia articles.
 - `HTTPUrlConnectionExample.java` — Helper for HTTP requests.
 - `pom.xml` — Maven dependencies.
+
+## Usage
+
+Example usage in Java:
+```java
+WikiResult result = new WikipediaDownloader("Albert Einstein").getResult();
+System.out.println(result.getText());
+System.out.println(result.getImageUrl());

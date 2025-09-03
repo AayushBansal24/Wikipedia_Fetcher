@@ -1,10 +1,8 @@
 package tech.codingclub.helix.entity;
 
 public class WikiResult {
-
     private String query;
     private String text_result;
-
     private String image_url;
 
     public WikiResult(String query, String text_result, String image_url) {
@@ -12,6 +10,7 @@ public class WikiResult {
         this.text_result = text_result;
         this.image_url = image_url;
     }
+    
     public String getQuery() {
         return query;
     }
