@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HTTPUrlConnectionExample {
-    private  final static String USER_AGENT="Mozilla/5.0";
+    private final static String USER_AGENT="Mozilla/5.0";
     public static String  sendGet(String urlStr) throws Exception {
         StringBuilder result= new StringBuilder();
         URL url=new URL(urlStr);
@@ -23,9 +23,9 @@ public class HTTPUrlConnectionExample {
 
     }
     public static void main(String[] args) {
-        try {
-            System.out.println(sendGet("https://codingclub.tech/test-get-request?name=Narendra"));
-        } catch (Exception e) {
+        try{
+            System.out.println(sendGet("https://codingclub.tech/test-get-request?name=Aayush"));
+        }catch (Exception e) {
             e.printStackTrace();
         }
 

@@ -35,7 +35,7 @@ public class WikipediaDownloader{
         String response="";
         String imageUrl = null;
 
-        //STEP3
+        //STEP3-4
         try {
             String wikipediaResponseHtml= HTTPUrlConnectionExample.sendGet(wikipediaURL);
 
